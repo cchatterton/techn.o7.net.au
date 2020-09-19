@@ -1,0 +1,21 @@
+
+# Don't track content of these folders
+234x60/
+advanced-cache.php
+ai1wm-backups/
+cache/
+downloads/
+images/
+index.php
+mu-plugins/
+php.ini
+updraft/
+uploads/
+po-cache/
+themes/NLR/
+themes/index.php/
+themes/techn_v5/
+themes/twenty*/
+themes/x.tnz5/
+wpo-cache/
+

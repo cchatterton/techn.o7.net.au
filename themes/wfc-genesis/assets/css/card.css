@@ -1,0 +1,248 @@
+/* Cards CSS will be added here */
+
+.card-wrapper {
+	margin-bottom: 1rem;
+}
+
+.card {
+	height: 100%;
+	border-radius: 0.1rem;
+	box-shadow: 0.1rem 0.1rem 0.2rem rgba(0,0,0,0.2);
+} 
+
+.card-innerwrapper {
+	position: inherit;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	min-width: inherit;
+	word-wrap: inherit;
+	border-radius: inherit;
+	height: inherit;
+	transition: box-shadow 0.3s ease-in-out, background-color 0.15s linear;
+} 
+
+.card-innerwrapper:hover {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
+}
+
+.card-block {
+	padding: 1rem 1rem 0 1rem;
+}
+
+.card > a,
+.card > a:hover {
+	color: unset;
+	text-decoration: none;
+	height: 100%;
+}
+
+.card-background-img {
+	height: 15rem;
+}
+
+.card-background-img::before {
+	width: 100%;
+	height: 100%;
+	content: '';
+	display: block;
+	background-position: center;
+	background-size: cover;	
+}
+
+.card-border-bottom {
+	border-bottom: 4px solid;
+}
+
+.card-border-top {
+	border-top: 4px solid;
+}
+
+.card .card-title {
+    font-weight: 700;
+}
+
+.card .card-info {
+	font-size: 0.875rem;
+	font-weight: 600;
+}
+
+.card-text {
+	margin-top: 1.5rem;
+    line-height: 1.4;
+}
+
+.card-icon { 
+	font-size: 2.5rem;
+}
+
+.card-content .card-cta-label, 
+.card-content-w-image .card-cta-label {
+	pointer-events: none;
+}
+
+/* Content Card */
+.card-content .card-body {
+	height: 100%;
+	display: flex;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.card-content .card-cta-label {
+	margin-top: auto;
+	padding: 0;
+}
+
+.card .card-block {
+	padding: 1rem 1rem 0;
+}
+
+.card .card-footer {
+	text-align: right;
+	background-color: unset;
+	border-top: none;
+	padding: 0 1rem 1.25rem;
+}
+
+/* Content Card with Image */
+.card-content-w-image .card-cta-label {
+	font-size: 0.875rem;
+	font-weight: 600;
+	border-radius: 0;
+	border-width: 2px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+/* Search Card */
+.card-img-wrap {
+	padding: 0.9375rem;
+}
+
+.card-search .card-background-img {
+	height: 5.3125rem;
+	width: 5.3125rem;
+}
+
+.card-search .card-footer {
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+
+/* Minimal Card */
+.card-minimal {
+	border: 0;
+	box-shadow: none;
+	background-color: transparent;
+}
+
+.card-minimal .card-background-img {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.card-minimal .card-body {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+/* Project Card */
+.card-project p i {
+	margin-right: .5rem;
+}
+
+.card-project .topics li {
+	border: 1px solid;
+	display: inline-block;
+	padding: 0;
+	margin-bottom: .3rem;
+	font-size: 0.8rem;
+	border-radius: 1rem;
+	opacity: 0.75;
+	background-color: transparent;
+}
+
+.card-half-background-img {
+	position: relative;
+	float: right;
+	width: 100%;
+	height: 100%;
+}
+
+.card-half-background-img::before {
+	width: 100%;
+	height: 100%;
+	content: '';
+	display: block;
+	background-repeat: no-repeat;
+	background-position: center;
+	-ms-background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.card-project .card-body {
+	width: 100%;
+}
+
+.full-width-img-cont-sm {
+	width: 100vw;
+	position: relative;
+	left: 50%;
+	right: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+}
+
+.card-project .topics {
+	padding: 0;
+}
+
+.card-project .topics li a {
+	display: inline-block;
+	padding: 0.1rem 0.75rem;
+}
+
+.card-project .topics a:hover {
+	text-decoration: none;
+	color: unset;
+}
+
+@media (min-width: 48rem) {
+	
+	.card-project .full-width-img-cont {
+		position: absolute;
+		height: 100%;
+		pointer-events: none;
+	} 
+	
+	.card-project .card-half-background-img {
+		width: 33.333333%;
+	}
+	
+	.card-project .card-body {
+		width: 66.666667%;
+	}
+	
+}
+
+@media (min-width: 62rem) {
+	
+	.card-project .full-width-img-cont {
+		width: unset;
+		left: 0;
+		right: 0;
+	} 
+	
+	.card-project .card-half-background-img,
+	.card-project .card-body {
+		width: 50%;
+	}
+	
+}

@@ -1,0 +1,111 @@
+#ascm-panels-metaopt-main-cont{
+	position: fixed !important;
+    background-color: rgba(0, 0, 0, 0.1) !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    pointer-events: all;
+    z-index: 99999 !important;
+    transition: 300ms ease-out !important;
+}
+
+#ascm-panels-metaopt-sub-cont{
+    background-color: white !important;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2) !important;
+    width: 300px !important;
+    margin: auto !important;
+    transition: 300ms ease-out !important;
+    animation-duration: 500ms !important;
+    animation-timing-function: ease-in-out !important;
+    transform-origin: top center !important;
+    transform-style: preserve-3d !important;   
+}
+
+#ascm-panels-metaopt-header-cont{
+	background: linear-gradient(45deg, #fea576, #fe7e75) !important;
+    color: #FFFFFF !important;
+    font-weight: 500 !important;
+	padding: 10px 20px !important;
+	transition: 300ms ease-out !important;
+}
+
+#ascm-panels-metaopt-content-cont{
+	padding: 10px 20px !important;
+	transition: 300ms ease-out !important;
+}
+
+#ascm-panels-metaopt-footer-cont{
+	height: 30px !important;
+	margin: 10px 20px !important;
+	transition: 300ms ease-out !important;
+}
+
+#ascm-panels-metaopt-header-cont span{
+	margin-left: 2px !important;
+	transition: 300ms ease-out !important;
+}
+
+#ascm-panels-metaopt-select{
+    width: 100% !important;
+    transition: 300ms ease-out !important;
+}
+
+#ascm-panels-metaopt-apply-btn{
+	position: relative !important;
+    background: linear-gradient(45deg, #fea576, #fe7e75) !important;
+    border: none !important;
+    color: #FFFFFF !important;
+    font-weight: 500 !important;
+    margin-left: 1px !important;
+    padding: 10px 20px !important;
+    text-align: center !important;
+    -webkit-transition-duration: 0.4s !important;
+    transition-duration: 0.4s !important;
+    text-decoration: none !important;
+    overflow: hidden !important;
+    cursor: pointer !important;
+    transition: 300ms ease-out !important;
+}
+
+#ascm-panels-metaopt-cancel-btn{
+	position: relative !important;
+    background: linear-gradient(45deg, #fea576, #fe7e75) !important;
+    border: none !important;
+    color: #FFFFFF !important;
+    font-weight: 500 !important;
+    margin-left: 5px !important;
+    padding: 10px 20px !important;
+    text-align: center !important;
+    -webkit-transition-duration: 0.4s !important;
+    transition-duration: 0.4s !important;
+    text-decoration: none !important;
+    overflow: hidden !important;
+    cursor: pointer !important;
+    transition: 300ms ease-out !important;
+}
+
+@keyframes showEnter {
+    0% {
+        opacity: 0.0;
+        transform: translateY(calc(100vh - (100vh * .5))) rotateX(60deg);
+    }
+    100% {
+        opacity: 1.0;
+        transform: translateY(0) rotateX(0deg);
+    }
+}
+
+@keyframes hideExit {
+    0% {
+        opacity: 1.0;
+        transform: translateY(0) rotateX(0deg);
+    }
+    100% {
+        opacity: 0.0;
+        transform: translateY(calc(100vh - (100vh * .5))) rotateX(60deg);
+    }
+}
+
+
+

@@ -1,0 +1,22 @@
+.wfc-separator {
+    margin-left: -12px;
+    width: calc( 100% + 24px );
+}
+.wfc-separator-title {
+	color: #555;
+	padding: 12px;
+	background: #fff;
+	font-weight: bold;
+	letter-spacing: 0.2px;
+}
+.wfc-separator-desc {
+	padding: 0 12px;
+}
+.customize-control-separator + .customize-control-checkbox label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#accordion-panel-widgets {
+	display: none !important;
+}

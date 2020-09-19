@@ -1,0 +1,178 @@
+.ascm_panels_show {
+  display: block;
+}
+
+.ascm_panels_hide {
+  display: none;
+}
+
+/* ASCM Panel Settings*/
+.ascm-panels-availablepanels-main-cont {
+  position: absolute !important;
+  top: 10px !important;
+  background-color: white !important;
+  height: 500px !important;
+  width: 420px !important;
+  transition: 300ms ease-out !important;
+  z-index: 10 !important;
+}
+
+.ascm-panels-availablepanels-header-cont {
+  height: 40px !important;
+  background-color: #fe9876 !important;
+  padding: 10px !important;
+}
+
+.ascm-panels-availablepanels-header-cont label{
+  color: #ffffff !important;
+}
+
+#ascm-panels-availablepanels-closepanels-btn {
+  float: right !important;
+  margin-right: 5px !important;
+  cursor: pointer !important;
+}
+
+#ascm-panels-availablepanels-closepanels-btn i {
+  color: #ffffff !important;
+}
+
+.ascm-panels-availablepanels-info-cont{
+  height: 60px !important;
+  padding: 10px !important;
+  background-color: #ffffff !important;
+}
+
+.ascm-panels-availablepanels-sub-cont {
+  padding: 10px !important;
+  overflow-x: hidden !important;
+  overflow-y: scroll !important;
+  height: 400px !important;
+  background-color: rgba(153, 153, 153, 0.09) !important;
+  box-shadow: 10px 10px 3px -8px rgba(0,0,0,0.3) inset !important;
+  -webkit-box-shadow: 10px 10px 3px -8px rgba(0,0,0,0.3) inset !important;
+  -moz-box-shadow: 10px 10px 3px -8px rgba(0,0,0,0.3) inset !important;
+}
+
+.ascm-panels-availablepanels-main-cont .ascm-panels-availablepanels-sub-cont .js-edit,
+.ascm-panels-availablepanels-main-cont .ascm-panels-availablepanels-sub-cont .js-remove{
+  display: none !important;
+}
+
+.ascm-panels-availablepanels-main-cont .ascm-panels-availablepanels-sub-cont .ascm-panels-panel-item {
+  cursor: grab !important;
+  display: flex !important;
+}
+
+
+#ascm-mod-settings-main-cont-panels .ascm-panels-availablepanels-intro-cont {
+  width: 400px !important;
+  float: left !important;
+  position: -webkit-sticky;
+  position: sticky;  
+  top: 30px;
+  margin-top: 55px;
+  padding: 10px;
+}
+
+#ascm-mod-settings-main-cont-panels .ascm-panels-availablepanels-intro-cont .ascm-panels-availablepanels-legends-cont .fas{
+  width: 20px !important;
+}
+
+#ascm-mod-settings-main-cont-panels .ascm-panels-availablepanels-viewpanels-btn-cont {
+  padding-top: 10px !important;
+  border-top: 1px dashed #999999 !important;
+  margin-top: 10px !important;
+}
+
+.ascm-panels-availablepanels-viewpanels-btn {
+  background: linear-gradient(45deg, #fea576, #fe7e75) !important;
+  border: none !important;
+  color: #FFFFFF !important;
+  font-weight: 500 !important;
+  margin-left: 1px !important;
+  padding: 10px 20px !important;
+  text-align: center !important;
+  -webkit-transition-duration: 0.4s !important;
+  transition-duration: 0.4s !important;
+  text-decoration: none !important;
+  overflow: hidden !important;
+  cursor: pointer !important;
+  float: right !important;
+  transition: 300ms ease-out !important;
+}
+
+#ascm-mod-settings-main-cont-panels .ascm-panels-availablepages_cont {
+  width: 825px !important;
+  float: left !important;
+  margin-left: 17px !important;
+}
+
+#ascm-mod-settings-main-cont-panels .ascm-panels-availablepages_cont .ascm_panels_pagepanel_cont{
+  border: solid 1px #999999 !important;
+  padding: 20px !important;
+}
+
+#ascm-mod-settings-main-cont-panels .ascm-panels-availablepages_cont .ascm_panels_pagepanel_cont label {
+  margin-bottom: 20px !important;
+}
+
+#ascm-mod-settings-main-cont-panels .ascm-panels-availablepages_cont .ascm_panels_pagepanel_cont img {
+  background-color: #333 !important;
+  width: 50px !important;
+  float: right !important;
+}
+
+#ascm-mod-settings-main-cont-panels .ascm-panels-availablepages_cont .ascm_panels_pagepanel_cont .ascm-panels-entity-cont {
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #999;
+  text-align: center;
+  color: #fff;
+  font-weight: 500;
+  line-height: 50px;
+}
+
+#ascm-mod-settings-main-cont-panels .ascm-panels-availablepages_cont .ascm-panels-availablepages_items_label {
+  background-color: #999999 !important;
+  color: #ffffff !important;
+  padding-left: 10px !important;
+  margin-top: 20px !important;
+}
+
+#ascm-mod-settings-main-cont-panels .ascm-panels-availablepages_cont .ascm-panels-availablepages_items_cont {
+  min-height: 44px !important;
+  background-color: #fff !important;
+  border-right: 2px dashed #999999 !important;
+  border-bottom: 2px dashed #999999 !important;
+  border-left: 2px dashed #999999 !important;
+}
+
+#ascm-mod-settings-main-cont-panels .ascm-panels-availablepages_cont .ascm-panels-availablepages_items_cont {
+  position: relative !important;
+}
+
+#ascm-mod-settings-main-cont-panels .ascm-panels-availablepages_cont .ascm-panels-availablepages_items_cont .js-edit {
+  float: right !important;
+  cursor: pointer !important;
+  position: absolute !important;
+  right: 30px;
+}
+
+#ascm-mod-settings-main-cont-panels .ascm-panels-availablepages_cont .ascm-panels-availablepages_items_cont .js-edit a {
+  color: inherit !important;
+}
+
+#ascm-mod-settings-main-cont-panels .ascm-panels-availablepages_cont .ascm-panels-availablepages_items_cont .js-remove {
+  float: right !important;
+  cursor: pointer !important;
+  position: absolute !important;
+  right: 10px;
+}
+
+#ascm-mod-settings-main-cont-panels .ascm-panels-availablepages_cont .ascm-panels-availablepages_items_cont .ascm-panels-panel-item  {
+  cursor: grab !important;
+  display: flex !important;
+}

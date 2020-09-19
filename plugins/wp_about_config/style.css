@@ -1,0 +1,8 @@
+tr.type-config a.row-title {white-space: nowrap;}
+tr.type-config td {height:10px;}
+tr.type-config th.check-column{padding:6px 0!important;}
+th#taxonomy-config_type, th#config_parent, th#config_children {width: 100px;}
+div.config_clickable:hover {color:#21759b;cursor:pointer;}
+.config-col-bg{padding: 0 10px;border-radius:10px;display:inline-block;}
+.config-more{background:#555;color:#fff;}
+.config-more:hover{background:#000;}

@@ -1,0 +1,91 @@
+.ascm-repost-relatedpostlist-title {
+    color: #999;
+    font-weight: 500;
+}
+
+.ascm-repost-relatedpostlist-items-cont {
+	display: flex;
+	width: auto; 
+	overflow-y: hidden;
+	overflow-x: inherit; 
+	cursor: grab;
+    padding-right: 5px;
+}
+
+.ascm-repost-relatedpostlist-item-cont {
+	position: relative;
+	min-width: 180px;
+	min-height: 180px;
+	max-width: 180px;
+	max-height: 180px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+
+.ascm-repost-relatedpostlist-item-cont img {
+	position: absolute;
+	object-fit: cover;
+	object-position: center;
+	min-width: 180px;
+	min-height: 180px;
+	max-width: 180px;
+	max-height: 180px;
+}
+
+.ascm-repost-relatedpostlist-item-cont span {
+	position: absolute;
+	display: none;
+	cursor: pointer;
+	bottom: 10px;
+    left: 0;
+    width: 100%;
+    background-color: #00000094;
+    font-weight: 500;
+    color: #fff;
+    padding: 0 5px;
+    transition: 200ms ease-out;
+}
+
+.ascm-repost-relatedpostlist-item-cont:hover {
+	-webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+	transition: 200ms ease-out;
+}
+
+.ascm-repost-relatedpostlist-item-cont:hover span {
+	display: block;
+}
+
+
+/* 
+* Medium devices (tablets)
+*/
+@media (min-width: 640px){
+
+}
+
+/* 
+* Medium devices (tablets)
+*/ 
+@media (min-width: 768px){
+
+}
+
+/* 
+* large devices (desktops)
+*/ 
+@media (min-width: 1024px){
+	.ascm-repost-relatedpostlist-items-cont {
+		overflow-x: hidden; 
+	}
+}
+
+/* 
+* large devices (desktops)
+*/  
+@media (min-width: 1200px){ 
+	.ascm-repost-relatedpostlist-items-cont {
+		overflow-x: hidden; 
+	}
+}

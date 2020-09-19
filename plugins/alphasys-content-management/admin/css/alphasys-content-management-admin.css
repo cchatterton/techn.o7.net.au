@@ -1,0 +1,594 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+/*body {
+    line-height: 1.5 !important; 
+}
+*/
+.ascm-oneline-ellipsis {
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ascm-hidden {
+    display: none !important; 
+} 
+
+.ascm-disable {
+    pointer-events: none !important; 
+    opacity: 0.5 !important; 
+    transition: 300ms ease-out !important;
+}
+
+.ascm-main-container{
+    width: 1140px !important;
+    height: 100% !important;
+    min-height: 550px !important;
+    padding-top: 20px !important;
+    padding-right: 20px !important;
+    padding-bottom: 20px !important;
+    transition: 300ms ease-out !important;
+}
+
+.ascm-main-sub-container{
+    background-color: #fff !important;
+    height: 100% !important;
+	-webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1) !important;
+    -moz-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1) !important;
+	box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1) !important;
+	transition: 300ms ease-out !important;
+}
+
+.ascm-main-header{
+	height: 50px !important;
+    padding: 10px 15px !important;
+    transition: 300ms ease-out !important;
+}
+.ascm-main-header img{
+    margin-top: -3px !important;
+    margin-right: 7px !important;
+    transition: 300ms ease-out !important;
+
+    vertical-align: middle !important;
+    border-style: none !important;
+}
+.ascm-main-header span{
+	color: #999 !important;
+    font-weight: 600 !important;
+    font-size: 18px !important;
+    transition: 300ms ease-out !important;
+}
+
+
+
+
+.ascm-main-content{
+    position: relative !important;
+	display: table !important;
+    height: 100% !important;
+    width: 100% !important;
+	vertical-align: top !important;
+	transition: 300ms ease-out !important;
+}
+.ascm-main-content-title{
+	padding: 10px 25px !important;
+	height: 50px !important;
+	background-color: hsla(0, 0%, 85%, 1) !important;
+	transition: 300ms ease-out !important;
+}
+.ascm-main-content-title span{
+	color: #fff !important;
+    font-size: 22px !important;
+}
+
+
+.ascm-main-content-mod-cont{
+    display: table !important;
+	padding: 10px !important;
+	transition: 300ms ease-out !important;
+}
+.ascm-main-content-mod-field-main-cont{
+	width: 550px !important; 
+	padding: 20px !important;
+	float: left !important;
+	transition: 300ms ease-out !important;
+}
+.ascm-main-content-mod-title-cont{
+    background: hsl(15, 99%, 73%) !important;
+    position: relative !important;
+    height: 40px !important;
+}
+.ascm-main-content-mod-title{
+    color: #FFFFFF !important;
+    font-weight: 500 !important;
+    padding: 10px 15px !important;
+    height: 40px !important;
+}
+.ascm-main-content-mod-gear-cont{
+    position: absolute !important;
+    right: 0 !important;
+    bottom: 0 !important;
+
+    width: 0 !important;
+    height: 0 !important;
+    border-style: solid !important;
+    border-width: 0 0 80px 90px !important;
+    border-color: transparent transparent #444 transparent !important;
+}
+.ascm-main-content-mod-gear-icon-cont {
+    position: absolute !important;
+    right: 10px !important;
+    bottom: 6px !important;
+    cursor: pointer !important;
+}
+.ascm-main-content-mod-gear-icon-cont i {
+    color: hsl(15, 99%, 73%) !important;
+}
+.ascm-main-content-mod-field-sub-cont{
+    position: relative !important;
+    height: 260px !important;
+	padding: 10px 15px !important;
+    border-right: solid 1px #d9d9d9 !important;
+    border-bottom: solid 1px #d9d9d9 !important;
+    border-left: solid 1px #d9d9d9 !important;
+    transition: 300ms ease-out !important;
+}
+.ascm-main-content-mod-field-sub-cont .ascm-main-content-mod-enable-cont {
+    position: absolute !important;
+    bottom: 15px !important;
+    transition: 300ms ease-out !important;
+}
+.ascm-main-content-mod-field-sub-cont .ascm-main-content-mod-desc-cont {
+    margin-bottom: 20px !important;
+    color: #999 !important;
+    font-size: 14px !important;
+    transition: 300ms ease-out !important;
+}
+.ascm-main-content-mod-field-sub-cont .ascm-main-content-mod-desc-cont img{
+    width: 50px;
+    float: left;
+    margin-top: 5px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    transition: 300ms ease-out !important;
+}
+.ascm-main-content-mod-field-sub-cont .ascm-main-content-mod-field-label {
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    color: #999 !important;
+    margin-bottom: 10px !important;
+    transition: 300ms ease-out !important;
+}
+.ascm-main-content-mod-field-sub-cont .ascm-main-content-mod-field-note {
+	color: #999 !important;
+    transition: 300ms ease-out !important;
+}
+
+.ascm-mod-settings-loading-cont {
+    padding: 10px !important; 
+    width: fit-content !important; 
+    position: absolute !important; 
+    bottom: 10px !important; 
+    left: 10px !important; 
+    transition: 300ms ease-out !important;
+}
+
+.ascm-main-content-btn-cont{
+    width: 100% !important; 
+    padding: 20px !important;
+    float: left !important;
+    transition: 300ms ease-out !important;
+}
+
+
+/* Button CSS*/
+.ascm-button{
+    float: right !important;
+    background: linear-gradient(45deg, #fea576, #fe7e75) !important;
+    border: none !important;
+    color: #FFFFFF !important;
+    font-weight: 500 !important;
+    margin-left: 1px !important;
+    padding: 10px 20px !important;
+    text-align: center !important;
+    -webkit-transition-duration: 0.4s !important;
+    transition-duration: 0.4s !important;
+    text-decoration: none !important;
+    overflow: hidden !important;
+    cursor: pointer !important;
+    transition: 300ms ease-out !important;
+}
+
+
+
+/* Switch CSS*/
+.ascm-onoffswitch {
+    position: relative; width: 90px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.ascm-onoffswitch-checkbox {
+    display: none !important;
+}
+.ascm-onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #fff; border-radius: 20px;
+}
+.ascm-onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.ascm-onoffswitch-inner:before, .ascm-onoffswitch-inner:after {
+    display: block; 
+    float: left; 
+    width: 50%; 
+    height: 30px; 
+    padding: 0; 
+    line-height: 30px;
+    font-size: 14px; 
+    color: white; 
+    font-family: Trebuchet, Arial, sans-serif; 
+    font-weight: bold;
+    box-sizing: border-box;
+}
+.ascm-onoffswitch-inner:before {
+    content: "ON";
+    padding-left: 10px;
+    background: linear-gradient(45deg, #fea576, #fe7e75) !important;
+    color: #FFFFFF;
+}
+.ascm-onoffswitch-inner:after {
+    content: "OFF";
+    padding-right: 10px;
+    background-color: #D9D9D9; color: #999999;
+    text-align: right;
+}
+.ascm-onoffswitch-switch {
+    display: block; 
+    width: 20px; 
+    margin: 7px;
+    background: #FFFFFF;
+    position: absolute; 
+    top: 0;
+    bottom: 0;
+    right: 56px;
+    border: 2px solid #fff; 
+    border-radius: 20px;
+    transition: all 0.3s ease-in 0s; 
+}
+.ascm-onoffswitch-checkbox:checked + .ascm-onoffswitch-label .ascm-onoffswitch-inner {
+    margin-left: 0;
+}
+.ascm-onoffswitch-checkbox:checked + .ascm-onoffswitch-label .ascm-onoffswitch-switch {
+    right: 0px; 
+}
+
+/* Mod settings CSS */
+.ascm_panels_page_ascm-panel-manager .ascm-mod-settings-main-cont,
+.ascm-mod-settings-main-cont{
+    display: block;
+    background-color: transparent !important;
+    position: relative !important;
+    z-index: 2 !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    pointer-events: all;
+    transition: 300ms ease-out !important;
+}
+
+.ascm_panels_page_ascm-panel-manager .ascm-mod-settings-sub-cont,
+.ascm-mod-settings-sub-cont{
+    position: relative;
+    background-color: white !important;
+    transition: 300ms ease-out !important;
+    animation-duration: 500ms !important;
+    animation-timing-function: ease-in-out !important;
+    transform-origin: top center !important;
+    transform-style: preserve-3d !important;  
+    transition: 300ms ease-out !important;
+    padding-right: 30px;
+    width: 100% !important;
+    box-shadow: none !important;
+    height: 100% !important;
+    margin: 0 !important; 
+}
+
+.ascm-mod-settings-main-cont{
+    position: fixed !important;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5) !important;    
+    z-index: 99999 !important;
+}
+
+.ascm-mod-settings-sub-cont{
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2) !important;
+    width: 800px !important;
+    height: 600px !important;
+    margin: auto !important;
+    padding-right: 0;
+}
+
+.ascm-mod-settings-section-title{
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #fff;
+    padding: 10px;
+    border-bottom: solid 1px #fe9876;
+}
+
+.ascm-mod-settings-field-cont {
+    padding: 10px !important; 
+    transition: 300ms ease-out !important;
+}
+
+.ascm-mod-settings-fields-cont{
+    margin-top: 30px;
+    padding: 10px !important;
+    transition: 300ms ease-out !important;
+    overflow-x: hidden !important;
+}
+
+.ascm-mod-settings-fields-cont .ascm-mod-settings-input,
+.ascm-mod-settings-fields-cont .ascm-mod-settings-select,
+.ascm-mod-settings-fields-cont textarea {
+    margin-top: 5px !important; 
+    width: 100% !important; 
+    transition: 300ms ease-out !important;
+}
+
+.ascm-mod-settings-fields-cont .image-preview-wrapper {
+    margin-top: 5px !important; 
+}
+
+.ascm-mod-settings-btn-cont {
+    padding: 10px;
+    width: fit-content;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    transition: 300ms ease-out !important;
+}
+
+.ascm-mod-settings-save-btn{
+    position: relative !important;
+    background: linear-gradient(45deg, #fea576, #fe7e75) !important;
+    border: none !important;
+    color: #FFFFFF !important;
+    font-weight: 500 !important;
+    margin-left: 1px !important;
+    padding: 10px 20px !important;
+    text-align: center !important;
+    -webkit-transition-duration: 0.4s !important;
+    transition-duration: 0.4s !important;
+    text-decoration: none !important;
+    overflow: hidden !important;
+    cursor: pointer !important;
+    transition: 300ms ease-out !important;
+}
+
+.ascm-mod-settings-cancel-btn{
+    position: relative !important;
+    background: linear-gradient(45deg, #fea576, #fe7e75) !important;
+    border: none !important;
+    color: #FFFFFF !important;
+    font-weight: 500 !important;
+    margin-left: 5px !important;
+    padding: 10px 20px !important;
+    text-align: center !important;
+    -webkit-transition-duration: 0.4s !important;
+    transition-duration: 0.4s !important;
+    text-decoration: none !important;
+    overflow: hidden !important;
+    cursor: pointer !important;
+    transition: 300ms ease-out !important;
+}
+
+@keyframes showEnter {
+    0% {
+        opacity: 0.0;
+        transform: translateY(calc(100vh - (100vh * .5))) rotateX(60deg);
+    }
+    100% {
+        opacity: 1.0;
+        transform: translateY(0) rotateX(0deg);
+    }
+}
+
+@keyframes hideExit {
+    0% {
+        opacity: 1.0;
+        transform: translateY(0) rotateX(0deg);
+    }
+    100% {
+        opacity: 0.0;
+        transform: translateY(calc(100vh - (100vh * .5))) rotateX(60deg);
+    }
+}
+
+
+/* Template identifier CSS*/
+.ascm-template-identifier ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+.ascm-template-identifier ul li {
+    position: relative;
+    display: block;
+    color: white;
+    font-size: 12px;
+    margin: 0 20px 5px 0;
+    padding: 5px 10px;
+}
+
+.ascm-template-identifier ul li:before,
+.ascm-template-identifier ul li:after {
+    content: '';
+    position: absolute;
+    display: block;
+    border-right: 15px solid transparent;
+    right: -15px;
+}
+
+.ascm-template-identifier ul li:before {
+    border-top: 20px solid #1497c1;
+    top: 0;
+}
+
+.ascm-template-identifier ul li:after {
+    border-bottom: 20px solid #1497c1;
+    bottom: 0;
+}
+
+.ascm-template-identifier ul li.default {
+    background-color: #1497c1;
+    border-left: 5px solid #0f6f8c;
+}
+
+.ascm-template-identifier ul li.custom {
+    background-color: #c15929;
+    border-left: 5px solid #8c401f;
+}
+
+.ascm-template-identifier ul li.default:before {
+    border-top-color: #1497c1;
+}
+
+.ascm-template-identifier ul li.default:after {
+    border-bottom-color: #1497c1;
+}
+
+.ascm-template-identifier ul li.custom:before {
+    border-top-color: #c15929;
+}
+
+.ascm-template-identifier ul li.custom:after {
+    border-bottom-color: #c15929;
+}
+
+.ascm-template-identifier small span {
+    position: relative;
+    color: white;
+    margin: 0 8px 0 2px;
+    padding: 5px;
+}
+
+.ascm-template-identifier small span:first-of-type {
+    background-color: #1497c1;
+    border-left: 3px solid #0f6f8c;
+}
+
+.ascm-template-identifier small span:last-of-type {
+    background-color: #c15929;
+    border-left: 3px solid #8c401f;
+}
+
+.ascm-template-identifier small span:before,
+.ascm-template-identifier small span:after {
+    content: '';
+    position: absolute;
+    display: block;
+    border-right: 8px solid transparent;
+    right: -8px;
+}
+
+.ascm-template-identifier small span:before {
+    border-top: 11px solid #1497c1;
+    top: 0;
+}
+
+.ascm-template-identifier small span:after {
+    border-bottom: 11px solid #1497c1;
+    bottom: 0;
+}
+
+.ascm-template-identifier small span:first-of-type:before {
+    border-top-color: #1497c1;
+}
+
+.ascm-template-identifier small span:first-of-type:after {
+    border-bottom-color: #1497c1;
+}
+
+.ascm-template-identifier small span:last-of-type:before {
+    border-top-color: #c15929;
+}
+
+.ascm-template-identifier small span:last-of-type:after {
+    border-bottom-color: #c15929;
+}
+
+
+/* loader */
+.ascm-loader-preview {
+    display: flex;
+    background-color: #d2d2d2;
+    width: 200px;
+    height: 150px;
+}
+
+.ascm-loader-preview > * {
+    margin: auto;
+}
+
+/* loader size */
+/* spinner size */
+.ascm-multi-radio-control {
+    display: flex;
+}
+
+.ascm-multi-radio-control .ascm-radio-item input {
+    display: none;
+}
+
+.ascm-multi-radio-control .ascm-radio-item label {
+    background: #eeeeee;
+    color: #030303;
+    padding: 15px 20px;
+    transition: 300ms ease-out;
+}
+
+.ascm-multi-radio-control .ascm-radio-item label:hover {
+    background: #fea576;
+}
+
+.ascm-multi-radio-control .ascm-radio-item input:checked + label {
+    background: #fe7e75;
+    color: white;
+}
+
+
+/* Module setting scroll CSS */
+.ascm-mod-settings-fields-cont::-webkit-scrollbar-button{ 
+  display: none !important;
+  height: 13px !important;
+  border-radius: 0px !important;
+  background-color: #fe9876 !important;
+} 
+
+.ascm-mod-settings-fields-cont::-webkit-scrollbar-button:hover{ 
+  background-color: #fe9876 !important;
+} 
+
+.ascm-mod-settings-fields-cont::-webkit-scrollbar-thumb{ 
+  background-color: #fe9876 !important;
+} 
+
+.ascm-mod-settings-fields-cont::-webkit-scrollbar-thumb:hover{ 
+  background-color: #fe9876 !important;
+} 
+
+.ascm-mod-settings-fields-cont::-webkit-scrollbar-track{ 
+ background-color: #ccc !important;
+} 
+
+.ascm-mod-settings-fields-cont::-webkit-scrollbar-track:hover{ 
+  background-color: #ccc !important;
+} 
+
+.ascm-mod-settings-fields-cont::-webkit-scrollbar{ 
+  width: 13px !important;
+}

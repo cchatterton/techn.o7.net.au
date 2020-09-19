@@ -1,0 +1,105 @@
+<?php
+/*
+ * Title: Half Image
+ * Type: half_image
+ * Settings: half_image
+ * Desc: Half Image card for ASCM Panels recipe.
+ * Date: May 14, 2019
+ *
+ * Varaiables:
+ * $panel - Contains the data needed for the Panel.
+ *
+ * Static functions usages:
+ * ASCM_Panels_Renderer::enqueue_style_scripts() - This is where you enqueue your styles and scripts. You can register your own and call the slug
+ *
+ *
+ * This template can be overridden by copying it to yourtheme/ascm-templates/panels/recipes/half_image.php.
+ * @package ascm-templates/panels/recipes/
+ * @version 1.0.0.0
+ */
+ASCM_Panels_Renderer::enqueue_styles_scripts(
+	array(
+		'bootstrap'
+	), 
+	array(
+		'ascm-panels-public-js',
+	)
+);
+//print_r($panel);
+$panel_id = $panel['data']['post']->ID;
+$outerwrapclass = $panel['data']['standard']['outerwrapclass'];
+$innerwrapclass = $panel['data']['standard']['innerwrapclass'];
+$halfimage_imageposition = $panel['data']['standard']['halfimage_imageposition'];
+$halfimage_containedimage = $panel['data']['standard']['halfimage_containedimage'];
+$cta_wrapppanel = isset($panel['data']['standard']['cta_wrapppanel']) ? $panel['data']['standard']['cta_wrapppanel'] : '';
+$cta_url = isset($panel['data']['standard']['cta_url']) ? $panel['data']['standard']['cta_url'] : '';
+
+if ( $cta_wrapppanel !== 'on' ) { ?>
+	<section id="<?php echo 'ascm-panels-main-cont-'.$panel_id; ?>" class="panel container-fluid outer <?php echo 'ascm-panels-main-cont-'.$panel_id .' '.$outerwrapclass; ?>">
+		<div class="wrapper inner">
+			<div class="row">
+
+		    <?php if($halfimage_imageposition == 'left' && $halfimage_containedimage != 'on') : ?>
+			    <?php ASCM_Panels_Renderer::render_halfimage_uncontainedimg($panel); ?>
+			<?php endif; ?>
+
+			    <div id="<?php echo 'ascm-panels-sub-cont-'.$panel_id; ?>" class="col-sm col-md col-lg <?php echo 'ascm-panels-sub-cont-'.$panel_id.' '.$innerwrapclass; ?>">
+					<?php if($halfimage_imageposition == 'left') : ?>
+					<div class="ascm-panels-halfimage-image-cont"></div>
+					<?php endif; ?>
+
+					<div class="ascm-panels-halfimage-content-cont">
+					<?php ASCM_Panels_Renderer::render_title($panel); ?>
+					<?php ASCM_Panels_Renderer::render_content($panel); ?>
+					<?php ASCM_Panels_Renderer::render_cta_link($panel); ?>
+					</div>
+
+					<?php if($halfimage_imageposition == 'right') : ?>
+					<div class="ascm-panels-halfimage-image-cont"></div>
+					<?php endif; ?>
+				</div>
+
+		    <?php if($halfimage_imageposition == 'right' && $halfimage_containedimage != 'on') : ?>
+			    <?php ASCM_Panels_Renderer::render_halfimage_uncontainedimg($panel); ?>
+			<?php endif; ?>
+
+			</div>
+		</div>
+	</section>
+<?php } else {
+	?>
+	<section id="<?php echo 'ascm-panels-main-cont-'.$panel_id; ?>" class="panel container-fluid outer <?php echo 'ascm-panels-main-cont-'.$panel_id .' '.$outerwrapclass; ?>">
+		<div class="wrapper inner">
+			<div class="row">
+				<a href="<?php echo $cta_url; ?>" class="full-panel-cta">
+
+			    <?php if($halfimage_imageposition == 'left' && $halfimage_containedimage != 'on') : ?>
+				    <?php ASCM_Panels_Renderer::render_halfimage_uncontainedimg($panel); ?>
+				<?php endif; ?>
+
+			    <div id="<?php echo 'ascm-panels-sub-cont-'.$panel_id; ?>" class="col-sm col-md col-lg <?php echo 'ascm-panels-sub-cont-'.$panel_id.' '.$innerwrapclass; ?>">
+					<?php if($halfimage_imageposition == 'left') : ?>
+					<div class="ascm-panels-halfimage-image-cont"></div>
+					<?php endif; ?>
+
+					<div class="ascm-panels-halfimage-content-cont">
+					<?php ASCM_Panels_Renderer::render_title($panel); ?>
+					<?php ASCM_Panels_Renderer::render_content($panel); ?>
+					<?php ASCM_Panels_Renderer::render_cta_link($panel); ?>
+					</div>
+
+					<?php if($halfimage_imageposition == 'right') : ?>
+					<div class="ascm-panels-halfimage-image-cont"></div>
+					<?php endif; ?>
+				</div>
+
+			    <?php if($halfimage_imageposition == 'right' && $halfimage_containedimage != 'on') : ?>
+				    <?php ASCM_Panels_Renderer::render_halfimage_uncontainedimg($panel); ?>
+				<?php endif; ?>
+
+				</a>
+			</div>
+		</div>
+	</section>
+	<?php
+}

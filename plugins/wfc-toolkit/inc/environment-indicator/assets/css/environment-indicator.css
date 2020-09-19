@@ -1,0 +1,22 @@
+#wpadminbar .wfct-ei .ab-item {
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+#wpadminbar .wfct-ei-development .ab-item,
+#wpadminbar:not(.mobile) .ab-top-menu .wfct-ei-development:hover > .ab-item {
+	background-color: #006799;
+	color: #fff;
+}
+
+#wpadminbar .wfct-ei-staging .ab-item,
+#wpadminbar:not(.mobile) .ab-top-menu .wfct-ei-staging:hover > .ab-item {
+	background-color: #ffba00;
+	color: #fff;
+}
+
+#wpadminbar .wfct-ei-live .ab-item,
+#wpadminbar:not(.mobile) .ab-top-menu .wfct-ei-live:hover > .ab-item {
+	background-color: #3db54b;
+	color: #fff;
+}

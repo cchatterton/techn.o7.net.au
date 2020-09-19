@@ -1,0 +1,101 @@
+.ascm-repost-prioritymetabox-main-container{
+	margin-top: 20px !important;
+	margin-bottom: 20px !important;
+}
+#ascm_logo{
+	vertical-align: middle !important;
+	margin-top: -3px !important;
+    margin-right: 7px !important;
+    transition: 300ms ease-out !important;
+}
+.ascm-repost-prioritymetabox-title-container{
+	background: #fff !important;
+	border-top: 1px solid #e5e5e5 !important;
+	border-right: 1px solid #e5e5e5 !important;
+	border-left: 1px solid #e5e5e5 !important;
+	box-shadow: 0 1px 1px rgba(0,0,0,.04) !important;
+}
+.ascm-repost-prioritymetabox-sub-container{
+    padding: 0px 5px 10px 5px !important;
+	min-width: 255px !important;
+	border: 1px solid #e5e5e5 !important;
+	box-shadow: 0 1px 1px rgba(0,0,0,.04) !important;
+	background: #fff !important;
+}
+.ascm-repost-prioritymetabox-sub-container .ascm-repost-prioritymetabox-label{
+	font-weight: 600 !important;
+    margin: 5px 0 !important;
+    transition: 300ms ease-out !important;
+}
+.ascm-repost-prioritymetabox-sub-container input,
+.ascm-repost-prioritymetabox-sub-container select {
+	width: 100% !important;
+}
+
+.ascm-repost-prioritymetabox-sub-container textarea {
+	width: 100% !important;
+	min-height: 100px !important;
+}
+
+
+
+/* Switch CSS*/
+.ascm-onoffswitch {
+    position: relative; width: 90px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.ascm-onoffswitch-checkbox {
+    display: none !important;
+}
+.ascm-onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #fff; border-radius: 20px;
+}
+.ascm-onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.ascm-onoffswitch-inner:before, .ascm-onoffswitch-inner:after {
+    display: block; 
+    float: left; 
+    width: 50%; 
+    height: 30px; 
+    padding: 0; 
+    line-height: 30px;
+    font-size: 14px; 
+    color: white; 
+    font-family: Trebuchet, Arial, sans-serif; 
+    font-weight: bold;
+    box-sizing: border-box;
+}
+.ascm-onoffswitch-inner:before {
+    content: "ON";
+    padding-left: 10px;
+    background: linear-gradient(45deg, #fea576, #fe7e75) !important;
+    color: #FFFFFF;
+}
+.ascm-onoffswitch-inner:after {
+    content: "OFF";
+    padding-right: 10px;
+    background-color: #D9D9D9; color: #999999;
+    text-align: right;
+}
+.ascm-onoffswitch-switch {
+    display: block; 
+    width: 20px; 
+    margin: 7px;
+    background: #FFFFFF;
+    position: absolute; 
+    top: 0;
+    bottom: 0;
+    right: 56px;
+    border: 2px solid #fff; 
+    border-radius: 20px;
+    transition: all 0.3s ease-in 0s; 
+}
+.ascm-onoffswitch-checkbox:checked + .ascm-onoffswitch-label .ascm-onoffswitch-inner {
+    margin-left: 0;
+}
+.ascm-onoffswitch-checkbox:checked + .ascm-onoffswitch-label .ascm-onoffswitch-switch {
+    right: 0px; 
+}

@@ -1,0 +1,72 @@
+body.wfc-preload-body {
+    overflow: hidden;
+}
+
+#wfc-preloader {
+    position: fixed;
+    display: flex;
+    display: -ms-flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000000;
+    transition: 800ms ease-out;
+}
+
+#wfc-preloader .wfc-spinner-container {
+    margin: auto;
+}
+
+#wfc-preloader .wfc-spinner-container .wfc-spinner {
+    opacity: 1.0;
+    transform: scale(1.0);
+    transition: 1500ms ease-out;
+}
+
+#wfc-preloader .wfc-spinner-container .wfc-spinner .item-loader-container {
+    display: flex;
+}
+
+#wfc-preloader .wfc-spinner-container .wfc-spinner .item-loader-container > div {
+    margin: auto;
+}
+
+#wfc-preloader .wfc-spinner-container .wfc-loading-text {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    opacity: 1.0;
+    transform: translateY(0.0);
+    transition: 800ms ease-out;
+    transition-delay: 700ms;
+}
+
+#wfc-preloader.pre-loading .wfc-spinner-container .wfc-spinner {
+    opacity: 0.0;
+    transform: scale(0.9);
+}
+
+#wfc-preloader.pre-loading .wfc-spinner-container .wfc-loading-text {
+    opacity: 0.0;
+    transform: translateY(-20px);
+}
+
+#wfc-preloader.post-loading {
+    opacity: 0.0;
+}
+
+#wfc-preloader.post-loading .wfc-spinner-container .wfc-spinner {
+    opacity: 0.0;
+    transform: translateY(-100px);
+    transition-duration: 800ms !important;
+}
+
+#wfc-preloader.post-loading .wfc-spinner-container .wfc-loading-text {
+    opacity: 0.0;
+    transform: translateY(-120px);
+    transition-duration: 600ms !important;
+    transition-delay: 0ms;
+}

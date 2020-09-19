@@ -1,0 +1,127 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+#ascm_bestbefore_scheduleoptions h2 img{
+    margin-top: -3px;
+    margin-right: 7px;
+    transition: 300ms ease-out !important;
+}
+
+.ascm-bestbefore-scheduleoptions-main-title{
+	background: linear-gradient(45deg, #fea576, #fe7e75) !important;
+    color: #FFFFFF !important;
+    font-weight: 500 !important;
+    padding: 5px 10px !important;
+    transition: 300ms ease-out !important;
+}
+.ascm-bestbefore-scheduleoptions-sub-cont{
+	padding: 5px 10px !important;
+	box-shadow: 10px 10px 5px -10px rgba(0,0,0,0.1) !important;
+    transition: 200ms ease-out !important;
+}
+.ascm-bestbefore-scheduleoptions-field-title{
+	font-weight: 600 !important;
+	margin: 5px 0 !important;
+	transition: 300ms ease-out !important;
+}
+
+.ascm-bestbefore-scheduleoptions-field-cont input[type=text], 
+.ascm-bestbefore-scheduleoptions-field-cont label{
+	width: 100% !important;
+	margin-bottom: .5rem !important;
+	transition: 300ms ease-out !important;
+}
+.ascm-bestbefore-scheduleoptions-field-cont label{
+	display: inline-block !important;
+	vertical-align: middle !important;
+}
+
+#ascm_bestbefore_specific_expdate{
+	border-right: solid 35px #8d96a0 !important;
+}
+
+#ascm_bestbefore_specific_expdate:hover{
+	cursor: pointer !important;
+	transition: 300ms ease-out !important;
+}
+
+.postbox-container #ascm_bestbefore_cal_icon{
+	top: 3px !important;
+    right: 8px !important;
+}
+
+.edit-post-sidebar #ascm_bestbefore_cal_icon{
+	top: 5px !important;
+    right: 8px !important;
+}
+
+#ascm_bestbefore_cal_icon{
+	position: absolute !important;
+    color: white !important;
+    transition: 300ms ease-out !important;
+}
+
+#ascm-bestbefore-myProgress {
+	width: 100%;
+	background-color: #cccccc;
+	position: relative;
+
+}
+
+#ascm-bestbefore-myBar {
+	height: 30px;
+	background: linear-gradient(45deg, #fea576, #fe7e75) !important;
+	text-align: center; /* To center it horizontally (if you want) */
+	line-height: 30px; /* To center it vertically */
+	color: white;
+}
+
+#ascm-bestbefore-myBar-progress-label{
+	position: absolute;
+	width: 100%;
+	height: 30px;
+	text-align: center;
+	padding-top: 5px;
+	font-weight: 600;
+	color: #ffffff;
+}
+
+.ascm-bestbefore-runexpirepostbatch-btn {
+	background: linear-gradient(45deg, #fea576, #fe7e75) !important;
+	border: none !important;
+	color: #FFFFFF !important;
+	font-weight: 500 !important;
+	margin-left: 1px !important;
+	padding: 10px 20px !important;
+	text-align: center !important;
+	-webkit-transition-duration: 0.4s !important;
+	transition-duration: 0.4s !important;
+	text-decoration: none !important;
+	overflow: hidden !important;
+	cursor: pointer !important;
+	float: right !important;
+	transition: 300ms ease-out !important;
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+.ascm-bestbefore-runexpirepostbatch-btn-disabled {
+	opacity: 0.4;
+	pointer-events: none;
+}
+
+.ascm-mod-bestbefore-expirepost-loading-cont{
+	padding: 10px !important;
+	transition: 300ms ease-out !important;
+}
+
+.ascm-bestbefore-expirepost-batch-status b{
+	font-weight: 600;
+}
+
+
+
+
+
